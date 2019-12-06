@@ -9,6 +9,4 @@ COPY --chown=bootgen:bootgen / /usr/bootgen
 WORKDIR /usr/bootgen
 
 USER bootgen
-RUN make -j
-
-ENTRYPOINT ["/usr/bootgen/bootgen"]
+RUN make
